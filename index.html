@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+
+<script src="js/jquery.min_1.js"></script>
+
+    <script>
+    function set_validator_errors(){
+        orderValidator.errorTitle = 'Per favore correggere i seguenti errori'; 
+
+        orderValidator.errorNameField = 'Nome'; 
+        orderValidator.errorNameMess = 'Inserisci il tuo nome'; 
+        
+        orderValidator.errorPhoneField = 'Telefono per la comunicazione'; 
+        orderValidator.errorPhoneMess = 'Inserisci il numero di telefono corretto'; 
+        
+        orderValidator.errorAddress = 'Inserisci l\'indirizzo corretto'; 
+        orderValidator.errorRequired = 'campo obbligatorio'; 
+        orderValidator.errorMaxLength = 'carattere massimo {1} valido'; 
+        orderValidator.errorMinLength = 'carattere minimo valido {1}'; 
+        orderValidator.errorEmailField = 'E-mail';
+        orderValidator.errorEmail = 'Email specificata non valida';
+        }
+    </script>
+    
+<script src="js/form.validate.js"></script>
+<script src="js/form.incomplete.js"></script>
+<script src="js/main2.js"></script>
+
+
+<base>
+    <meta charset="utf-8">
+    <title>MET FORM</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="icon" type="image/png" href="images/wr3-item3.png">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+      <style>
+              .hide , .flag-dropdown {display: none;} 
+              .error-box{ 
+                  color: #fff;
+                  background-color: #DE5042;
+                  border-radius: 5px;
+                  text-align: center;
+                  width: 100%;
+                  font-size: 13px;
+                  line-height: 20px;
+                 
+                  margin:0 !important;
+                  z-index: 100;
+              }
+          </style>  
+  </head>
+  <body>
+    <div class="wr-all">
+      <div class="wr wr01">
+        <div class="wr wr0">
+          <div class="block">
+            <div class="img"><img src="images/it.png" alt=""></div>
+            <div class="text">MET FORM</div>
+          </div>
+        </div>
+        <div class="wr wr1">
+          <div class="block">
+        
+            <div class="right">
+              <div class="text">Composizione naturale</div>
+              <div class="img-product"><img src="images/product.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wr wr2">
+        <div class="block">
+          <div class="img-fruit"><img src="images/wr2-img1.png" alt=""></div>
+          <div class="item-body">
+            <div class="item1">
+              <div class="item-title">Volete:</div>
+              <ul class="list">
+                <li>Più leggerezza?</li>
+                <li>Più attenzione?</li>
+                <li>Più complimenti?</li>
+              </ul>
+            </div>
+            <div class="item2">Ordina MET FORM e dimagrisci in sole 4 settimane! Sconto del 50% solo per l´Italia.</div>
+            <div class="item3"><a class="btn-default" href="#form-block">ORDINARE MET FORM</a></div>
+            <div class="item4"><span class="text1 oldPriceAndLabelForLandingInfoApi"><x-oldprice>78</x-oldprice> <x-currency>€</x-currency></span><span class="text2 priceAndLabelForLandingInfoApi"><x-newprice>39</x-newprice> <x-currency>€</x-currency> (-50%)</span></div>
+          </div>
+          <div class="img-flower"><img src="images/wr3-img1.png" alt=""></div>
+        </div>
+      </div>
+    
+
+    
+      <div class="wr wr6">
+        <div class="block">
+          <div class="title">Perché MET FORM è<br>così efficace?</div>
+          <div class="item-body">
+            <div class="item item1">
+              <div class="item-img"><img src="images/wr7-item1.png" alt=""></div>
+              <div class="item-title">
+                ESTRATTO DI RAMBUTAN (FITOIRISINA)
+              </div>
+              <div class="item-text">Lega e rimuove le cellule adipose<br>dall'organismo, aiuta intensamente a perdere il peso.<br>Impedisce d'ingrassare</div>
+            </div>
+            <div class="item item2">
+              <div class="item-img"><img src="images/wr7-item2.png" alt=""></div>
+              <div class="item-title">ESTRATTI DI KIVANO,<br>CHERIMOLA E LONGAN</div>
+              <div class="item-text">Abbattono i grassi, riducono i livelli di  di glucosio nel sangue.<br>Ripristinano l'equilibrio idrico e ringiovaniscono l'organismo dall'interno.</div>
+            </div>
+            <div class="item item3">
+              <div class="item-img"><img src="images/wr7-item3.png" alt=""></div>
+              <div class="item-title">ESTRATTI DI TÈ VERDE,<br>CAFFÈ VERDE,<br>GINSENG</div>
+              <div class="item-text">Potenti antiossidanti: rimuovono il liquido<br>superfluo e tossine dall'organismo.<br>Aiutano a recuperare le energie.</div>
+            </div>
+            <div class="item item4">
+              <div class="item-img"><img src="images/wr7-item4.png" alt=""></div>
+              <div class="item-title">
+                ESTRATTO DI
+                CORDYCEPS
+              </div>
+              <div class="item-text">Riduce l'appettito, accelera il metabolismo.<br>Rafforza il sistema immunitario, migliora il benessere</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wr wr7">
+        <div class="block">
+          <div class="title">Diventare un ideale<br>é facile!</div>
+          <ul class="list">
+            <li class="li1"> Una compressa al giorno</li>
+
+            <li class="li3">Il corso raccomandato<br>è di 30 giorni</li>
+          </ul>
+        </div>
+      </div>
+     
+      <div class="wr wr9">
+        <div class="block">
+          <div class="title">Attenzione ai falsi!</div>
+          <div class="img-box">
+            <div class="img-cert"><img src="images/cert.png" alt=""></div>
+            <div class="img-product"><img src="images/product.png" alt=""></div>
+          </div>
+          <div class="text">
+            Con la popolarità ottenuta da MET FORM nel
+            mercato europeo, sono aumentati
+            i casi di falsificazione, prodotti offerti a prezzi
+            bassi e di scarsa qualità. MET FORM originale (con fitoirisina) è disponibile solo sul nostro sito web. Non
+            risparmiare sulla tua salute - ordina il
+            prodotto certificato MET FORM dal
+            fornitore ufficiale!
+          </div>
+        </div>
+      </div>
+      <div class="wr wr10">
+        <div class="block">
+          <div class="title"> una compressa al giorno - e i risultati<br>noteranno tutti!</div>
+          <div class="img-girl"><img src="images/girl2.png" alt=""></div>
+          <div class="item-body">
+            <div class="item-title">Ora puoi:</div>
+            <div class="item">Indossare gli abiti di<br>2-3 taglie in meno</div>
+            <div class="item">Ottenere più attenzione<br>e complimenti</div>
+            <div class="item">Fare le cose che prima<br>stavi sognando!</div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="wr wr11">
+        <div class="block">
+          <div class="title">Non devi pensare! Ordina MET FORM<br>e ottieni uno sconto del 50%!</div>
+        </div>
+        <div class="block1">
+          <div class="block2">
+            <div class="subtitle">Solo per questo mese!</div>
+            <div class="img-sale"><img src="images/sale.png" alt=""></div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="block___price___img"><img src="images/product.png" alt=""></div>
+          <div class="price">
+            <div class="text1">Prezzo standard:&nbsp;<span class="oldPriceAndLabelForLandingInfoApi"> <x-oldprice>78</x-oldprice> <x-currency>€</x-currency></span></div>
+            <div class="text2">Prezzo scontato:&nbsp;<span class="priceAndLabelForLandingInfoApi"> <x-newprice>39</x-newprice> <x-currency>€</x-currency></span></div>
+          </div>
+          <form class="form-block orderForm" action="https://healthbestblog.space/cpatl/api.php" id="form-block" method="post">
+               
+    <select name="offer" class="form-control country_chang" style="display: none;">
+        <option data-country-code="IT" selected="selected" value="19277">
+            Италия        </option>
+    </select>
+
+                <div class="btn-group">
+              <input class="form-control" type="text" name="name" required placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="btn-group">
+              <input class="form-control" type="tel" name="phone" onkeyup="this.value=this.value.replace(/\s/,'')" minlength="5" required placeholder="Inserisci il tuo telefono">
+            </div>
+            <div class="btn-group">
+              <button class="btn-default" type="submit">ORDINARE MET FORM</button>
+            </div>
+                        <input type="hidden" name="stream_hid" value="PQnSWGp4">
+      <input type="hidden" name="offer_id" value="4725">
+
+      
+      <input type="hidden" name="country" value="IT"> 
+
+      <input type="hidden" name="sid1" value="alex">
+      <input type="hidden" name="sid2" value="alex2">
+      <input type="hidden" name="sid3" value="alex3">
+      <input type="hidden" name="redirect_url" value="https://amazinghealth.github.io/germitox-ita/success/index.html">
+          </form>
+          <div class="bottom-text">Pagamento dell'ordine solo alla<br>consegna della merce</div>
+        </div>
+      </div>
+      <div class="wr wr12">
+        <div class="block">
+<p>OOO "OSTROV PRODAZH" OGRN: 1197746695530 VAT: 7708365555</p>
+<p>129090, Moscow, pereulok Zhivarev, house 8, stroenie 3, flat 16 email: ostrov.prodazh@mail.com Skype: ostrov.prodazh@mail.com</p> 
+
+
+    
+            <p class="conf-link doclinks">
+        <a class="nav-link" href="" onclick="window.open('/policy_en.php'); return false;">Privacy Policy</a>
+          |
+        <a class="nav-link" href="" onclick="window.open('/terms_en.php'); return false;">Terms & Conditions</a>
+      </p>
+      
+    
+        </div>
+      </div>
+    </div>
+        <style>
+      .fluid {
+        width: 100%;
+        z-index: 100;
+        margin: 0 auto;
+        position: relative;
+        background-color: #fff;
+        padding: 15px 0;
+      }
+      .standart-block {
+  display: flex;
+  width: 20rem;
+  border: 7px solid #f36e6e;
+  border-radius: 10px;
+  padding: 10px 20px;
+  align-items: center;
+  margin: 0px auto;
+ font-size: 0.9375rem;
+}
+.standart-block__text {
+  width: 70%;
+}
+.standart-block__text span:first-child {
+  font-weight: 900;
+}
+
+.standart-block__text p {
+  margin: 10px 0;
+}
+.standart-block__text span:last-child {
+  font-weight: 600;
+}
+.standart-block__stamp  {
+  width: 30%;
+}
+.standart-block__stamp img {
+  width: 100%;
+}
+    </style>
+    <script src="js/jquery.min.js"></script>
+  <script>
+        $(document).ready(function(){
+            $("a[href*=#]").on("click", function(e){
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top
+                }, 777);
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+    <!--Счетчики метрик для вебмастеров-->
+
+
+
+   <!-- INTH_SNIPPET_BOTTOM -->
+
+
+<!-- WIDGETS -->
+
+
+
+</body>
+</html>
